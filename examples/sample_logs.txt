@@ -1,0 +1,9 @@
+<134>Oct 11 22:14:15 mymachine su: 'su root' failed for lonvick on /dev/pts/8
+<165>1 2023-10-11T22:14:15.003Z mymachine.example.com evntslog - ID47 - User login successful
+CEF:0|Security|threatmanager|1.0|100|worm successfully stopped|10|src=10.0.0.1 dst=2.1.2.2 spt=1232 dpt=80 act=blocked outcome=success
+LEEF:1.0|Microsoft|MSExchange|4.0 SP1|15345|src=10.0.0.1	dst=172.50.123.1	sev=5	cat=anomaly	srcPort=81	dstPort=21
+CEF:0|Palo Alto Networks|PAN-OS|8.1.0|TRAFFIC|end|3|src=192.168.1.100 dst=10.0.0.50 suser=john.doe act=allow
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event"><System><Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/><EventID>4624</EventID><Level>0</Level><TimeCreated SystemTime="2023-10-11T22:14:15.123456Z"/><Computer>workstation.example.com</Computer><Execution ProcessID="500" ThreadID="600"/></System><EventData><Data Name="TargetUserName">john.doe</Data><Data Name="TargetDomainName">EXAMPLE</Data><Data Name="IpAddress">192.168.1.100</Data></EventData></Event>
+LEEF:2.0|IBM|QRadar|7.3.0|Authentication|usrName=admin^action=login^result=success^sev=3
+<86>Dec 15 10:30:45 firewall kernel: DROP IN=eth0 OUT= MAC=00:11:22:33:44:55 SRC=203.0.113.5 DST=192.168.1.1 LEN=60 TOS=0x00 PREC=0x00 TTL=52 ID=12345 PROTO=TCP
+CEF:0|CheckPoint|VPN-1 & FireWall-1|NG FP3|Log|accept|0|src=10.1.1.100 dst=172.16.0.50 spt=54321 dpt=443 proto=TCP
